@@ -1,0 +1,131 @@
+Son güncelleme: 23 Ağustos 2026
+
+## Kimiz
+
+Pointer ("uygulama", "biz"), Türkiye'den işletilen, konum ve kıyafet temelli bir sosyal keşif uygulamasıdır. Bu Gizlilik Politikası, uygulamanın hangi bilgileri neden topladığını, kimlerle paylaştığını, ne kadar süre sakladığını ve bu bilgileri nasıl sildirebileceğinizi açıklar.
+
+Hesap oluşturup Pointer'ı kullanarak, bilgilerin burada anlatıldığı şekilde toplanmasını ve kullanılmasını kabul etmiş olursunuz. Kabul etmiyorsanız lütfen uygulamayı kullanmayın.
+
+## Tanımlar
+
+- **Hesap** — Pointer'ı kullanmanız için oluşturulan kendinize ait hesap.
+- **Kişisel Veri** — kimliği belirli veya belirlenebilir bir kişiye ilişkin her türlü bilgi. "Kişisel Veri" ve "kişisel bilgi" ifadelerini aynı anlamda kullanıyoruz.
+- **Hizmet Sağlayıcı** — uygulamanın çalışabilmesi için bizim adımıza veri işleyen üçüncü taraf şirket. Kullandıklarımız 3. bölümde isimleriyle sayılmıştır.
+- **Gönderi** — "konum paylaşımı": bir yerde olduğunuzu ve ne giydiğinizi belirten, diğer kullanıcılara 24 saat boyunca görünen paylaşım.
+- **Siz** — Pointer'ı kullanan kişi.
+
+## 1. Topladığımız bilgiler
+
+### Bize verdiğiniz bilgiler
+
+- E-posta adresi ve parola. Google veya Apple ile giriş yaparsanız parola yerine e-posta adresinizi onlardan alırız.
+- Profilinizi oluştururken girdiğiniz ad, soyad, cinsiyet ve doğum tarihi.
+- Yüklemeyi seçtiğiniz profil ve kıyafet fotoğrafları. Bunlar çoğunlukla yüzünüzün görüntülerini içerir.
+- Gönderilerinizin içeriği: yer adı, ne giydiğinize dair açıklama ve etiketler.
+- Diğer kullanıcılara gönderdiğiniz mesajların içeriği.
+- Yardım ve Destek üzerinden bize yazdıklarınız.
+
+### İzninizle topladığımız bilgiler
+
+- **Konum.** Bir gönderi paylaştığınızda, belirttiğiniz yerin bulunduğunuz yerle uyuşup uyuşmadığını doğrulamak ve yakındakilerin gönderinizi bulabilmesi için cihaz konumunuzu kullanırız. Gezinirken de size yakın gönderileri bulmak için kullanırız. Konum yalnızca bu işlemleri yaptığınız anda kullanılır; uygulama sizi arka planda takip etmez. Cihaz ayarlarından istediğiniz zaman kapatabilirsiniz, ancak uygulamanın büyük bölümü konum olmadan çalışmaz.
+- **Kamera ve fotoğraf galerisi.** Yalnızca siz bir fotoğraf eklemeyi seçtiğinizde. Seçtiğiniz görsele erişiriz, galerinizdeki başka hiçbir şeye erişmeyiz.
+
+### Otomatik toplanan bilgiler
+
+Uygulama sunucularımızla konuştuğunda, barındırma sağlayıcımız standart sunucu kayıtları tutar — IP adresi, zaman damgaları ve yapılan isteğin ne olduğu — güvenlik izleme ve arıza tespiti için. Pointer'da reklam, analitik SDK'sı ve başka uygulama veya sitelerde takip yoktur.
+
+## 2. Bilgilerinizi nasıl kullanıyoruz
+
+- Hesabınızı oluşturmak ve yönetmek için.
+- Profilinizi, gönderilerinizi ve fotoğraflarınızı uygulamanın diğer kullanıcılarına göstermek için.
+- Size yakın gönderileri bulmak ve sizinkinin başkalarınca bulunmasını sağlamak için.
+- Eşleşme isteği gönderip almanızı ve eşleşen kullanıcılar arasında mesaj taşımayı sağlamak için.
+- Siz istediğinizde, yüklediğiniz kıyafet fotoğrafını çözümleyip açıklama önermek için.
+- Destek talebinizi yanıtlamak için.
+- Hizmeti güvenli tutmak için: şikâyetleri değerlendirmek, Kullanım Koşullarını uygulamak ve kötüye kullanımı önlemek.
+- Yasal yükümlülüklere uymak için.
+
+Bilgilerinizi reklam için kullanmıyoruz ve satmıyoruz.
+
+## 3. Bilgileriniz kimlerle paylaşılıyor
+
+### Uygulamanın diğer kullanıcıları
+
+Bilgilerinizin paylaşıldığı asıl yer burasıdır ve uygulamanın amacı da budur. Bir gönderi yayınladığınızda şunlar diğer kullanıcılara görünür: adınız, profil ve kıyafet fotoğraflarınız, cinsiyetiniz ve yaşınız, yazdığınız yer adı ile kıyafet açıklaması, ve yaklaşık olarak ne kadar uzakta olduğunuz. Gönderdiğiniz mesajlar yalnızca gönderdiğiniz kişiye görünür. Dilediğiniz kullanıcıyı engelleyebilir, gönderilerinizi ve fotoğraflarınızı istediğiniz zaman silebilirsiniz.
+
+### Hizmet sağlayıcılar
+
+Uygulamayı çalıştırmak için şu şirketleri kullanıyoruz. Bizim adımıza, kendi gizlilik politikaları kapsamında veri işlerler:
+
+- **Supabase** — veritabanı, kimlik doğrulama, dosya depolama ve anlık mesajlaşma. Tüm uygulama verisi burada saklanır.
+- **Google Sign-In** — isteğe bağlı giriş. Yalnızca siz seçerseniz kullanılır.
+- **Apple Sign-In** — isteğe bağlı giriş. Yalnızca siz seçerseniz kullanılır.
+- **SendGrid** — size göndermek zorunda olduğumuz e-postaları gönderir; parola sıfırlama kodları ve destek yanıtları gibi.
+- **Anthropic** — siz istediğinizde kıyafet fotoğrafını çözümler. Fotoğraf yalnızca o istek için gönderilir ve model eğitiminde kullanılmaz.
+
+Kişisel Verilerinizi başka hiç kimseyle paylaşmıyoruz. Reklam ortağımız, veri simsarıyla ilişkimiz ve bağlı şirketimiz yoktur.
+
+### Yasanın gerektirdiği durumlar
+
+Yasal olarak zorunlu olduğumuzda, ya da bir yasal yükümlülüğe uymak, birinin güvenliğini korumak, hizmetin kötüye kullanımını araştırmak veya yasal haklarımızı savunmak için gerekli olduğuna iyi niyetle inandığımızda bilgileri açıklayabiliriz.
+
+### İşletme el değiştirirse
+
+Pointer bir gün başka bir şirketle birleşir veya ona satılırsa, bilgileriniz bu devrin parçası olarak aktarılabilir. Bu gerçekleşmeden ve size farklı bir gizlilik politikası uygulanmadan önce sizi bilgilendiririz.
+
+## 4. Bilgilerinizi ne kadar süre saklıyoruz
+
+Kişisel Verileri yalnızca yukarıdaki amaçlar için gerekli olduğu sürece saklarız.
+
+- **Hesap bilgileri** — hesabınız var olduğu sürece. Hesabınızı sildiğinizde anında kaldırılır; 6. bölüme bakın.
+- **Gönderiler** — bir gönderi yayınlandıktan 24 saat sonra görünmez olur. Süresi dolan gönderiler kendi geçmişinizi görebilmeniz için saklanır ve yalnızca en son on tanesi tutulur; daha eskiler otomatik olarak silinir.
+- **Mesajlar** — sohbet var olduğu sürece. Eşleşmeyi sonlandırmak sohbeti ve mesajlarını siler.
+- **Destek yazışmaları** — konu kapandıktan sonra 24 aya kadar; sonraki soruları yanıtlayabilmek ve olası taleplere karşı savunma yapabilmek için.
+- **Sunucu kayıtları** — güvenlik ve arıza tespiti için 24 aya kadar.
+
+Yasa gerektirdiğinde ya da bir yasal talebi ileri sürmek veya savunmak için gerekli olduğunda bilgileri daha uzun saklayabiliriz. Şifreli yedeklerde sınırlı bir süre artık kopyalar kalabilir; bunlar felaket kurtarma veya yasal zorunluluk dışında geri yüklenmez.
+
+## 5. Bilgileriniz nerede işleniyor
+
+Bilgileriniz, Türkiye dışında ve yaşadığınız ülkenin dışında bulunabilecek sunucularda işlenir; buralarda veri koruma mevzuatı sizinkinden farklı olabilir. Yasanın gerektirdiği hallerde bu tür aktarımların uygun güvencelerle korunmasını sağlarız.
+
+## 6. Hesabınızı ve verilerinizi silme
+
+Hesabınızı kendiniz silebilirsiniz ve bu işlem her şeyi siler: profiliniz, bütün fotoğraflarınız, bütün gönderileriniz, eşleşmeleriniz, sohbetleriniz ve giriş bilgileriniz. Bekleme süresi yoktur ve geri alınamaz.
+
+**Uygulama içinden** — Profil → menü → Hesabı Sil. İki kez onaylamanız istenir.
+
+**Uygulama olmadan** — https://mealuc.github.io/pointer-site/delete-account.html adresine gidip e-posta adresinizi doğrulayın. Uygulamanın kurulu olması gerekmez. Pointer'ı kaldırdıysanız, cihazınızı kaybettiyseniz veya giriş yapamıyorsanız kullanmanız gereken yol budur.
+
+**E-posta ile** — hesabın e-posta adresinden supportpointer@gmail.com adresine yazın, hesabınızı 30 gün içinde biz silelim.
+
+Hesabınızı silmeden, tek tek fotoğraf ve gönderilerinizi de istediğiniz zaman profilinizden silebilirsiniz.
+
+Silme sonrasında yasanın bizi zorunlu tuttuğu hallerde sınırlı miktarda bilgiyi saklamamız gerekebilir.
+
+## 7. Haklarınız
+
+Yaşadığınız yere bağlı olarak; hakkınızda tuttuğumuz Kişisel Verilerin bir kopyasını isteme, bunları düzelttirme, sildirme, kullanımını kısıtlatma veya kullanıma itiraz etme ve ulusal veri koruma kurumuna şikâyette bulunma haklarına sahip olabilirsiniz. Bunların çoğunu uygulama içinde kendiniz yapabilirsiniz: profiliniz düzenlenebilir, silme ise yukarıda anlatılmıştır. Diğer talepler için supportpointer@gmail.com adresine yazın.
+
+## 8. Güvenlik
+
+Bilgilerinizi korumak için ticari olarak makul önlemler alıyoruz: bağlantılar aktarım sırasında şifrelenir ve veritabanı düzeyinde erişim kullanıcı bazında kısıtlanır, böylece bir kullanıcı bir başkasının özel verisini okuyamaz. Hiçbir aktarım veya saklama yöntemi tümüyle güvenli değildir; mutlak güvenliği garanti edemeyiz.
+
+## 9. Yaş sınırı
+
+Pointer yetişkinler içindir. Kullanabilmek için en az 18 yaşında olmanız gerekir; Kullanım Koşullarımız da aynısını söyler. 18 yaşından küçüklerden bilerek Kişisel Veri toplamayız. Ebeveyn veya vasiyseniz ve çocuğunuzun bize bilgi verdiğini düşünüyorsanız supportpointer@gmail.com adresine yazın, kaldıralım.
+
+## 10. Diğer sitelere bağlantılar
+
+Uygulama ve bu site başka yerlere bağlantı verebilir. O siteleri biz denetlemiyoruz ve içeriklerinden ya da gizlilik uygulamalarından sorumlu değiliz. Onlara bir şey vermeden önce kendi politikalarını okuyun.
+
+## 11. Bu politikadaki değişiklikler
+
+Bu politikayı güncelleyebiliriz. Güncellediğimizde yeni sürümü bu sayfada yayınlar ve yukarıdaki "Son güncelleme" tarihini değiştiririz. Değişiklik önemliyse, yürürlüğe girmeden önce uygulama içinden veya e-postayla size bildiririz.
+
+## 12. İletişim
+
+Bu politikayla veya bilgilerinizle ilgili sorular için:
+
+- E-posta: supportpointer@gmail.com
+- Uygulama içinden: Yardım ve Destek

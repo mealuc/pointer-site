@@ -103,7 +103,17 @@ h2 {
   text-wrap: balance;
 }
 
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  margin: 1.6rem 0 0.4rem;
+  color: var(--ink);
+}
+
 p { margin: 0 0 1rem; color: var(--ink-soft); }
+
+strong { color: var(--ink); font-weight: 600; }
 
 ul { margin: 0 0 1rem; padding-left: 1.15rem; color: var(--ink-soft); }
 li { margin-bottom: 0.35rem; }

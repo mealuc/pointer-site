@@ -1,5 +1,15 @@
 /**
- * Generates `privacy.html` and `terms.html` from `rn-app/src/content/legal.ts`.
+ * Generates `privacy.html` and `terms.html`.
+ *
+ * The two pages have **different sources**, on purpose:
+ *
+ * - `terms.html` comes from `rn-app/src/content/legal.ts`, so the site and the in-app
+ *   modal show the same Terms.
+ * - `privacy.html` comes from `content/privacy-{en,tr}.txt`, which is the full policy
+ *   the store listings link to. The in-app privacy text stays a short plain-language
+ *   summary; a linked policy has to carry retention periods, transfer, rights and an
+ *   age limit, and a consent footer should not be 1,500 words. Only one of them is
+ *   canonical, and it is this one.
  *
  * The point is to stop the public site from becoming a fourth hand-maintained copy of
  * the legal text. Edit the documents in the Swift constants and in `legal.ts`, run this,
@@ -26,9 +36,19 @@ const escape = (text) =>
   text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 /**
- * The documents are plain text with a shape: an "updated" line, numbered ALL-CAPS
- * headings, "- " bullets, and paragraphs. This turns that shape into semantic markup
- * rather than dumping the whole thing into a <pre>.
+ * Inline marks shared by both renderers: `**bold**` and bare https URLs.
+ * Applied after escaping, so the escape still sees the raw text.
+ */
+function inline(text) {
+  return escape(text)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/(https:\/\/[^\s<)]+)/g, '<a href="$1">$1</a>');
+}
+
+/**
+ * The in-app documents are plain text with a shape: an "updated" line, numbered
+ * ALL-CAPS headings, "- " bullets, and paragraphs. This turns that shape into
+ * semantic markup rather than dumping the whole thing into a <pre>.
  */
 function toHtml(text) {
   const lines = text.split('\n');
@@ -37,7 +57,7 @@ function toHtml(text) {
 
   const flush = () => {
     if (!bullets.length) return;
-    out.push('<ul>' + bullets.map((b) => `<li>${escape(b)}</li>`).join('') + '</ul>');
+    out.push('<ul>' + bullets.map((b) => `<li>${inline(b)}</li>`).join('') + '</ul>');
     bullets = [];
   };
 
@@ -46,7 +66,7 @@ function toHtml(text) {
     if (!line) return flush();
 
     if (index === 0) {
-      out.push(`<p class="updated">${escape(line)}</p>`);
+      out.push(`<p class="updated">${inline(line)}</p>`);
       return;
     }
     if (line.startsWith('- ')) {
@@ -56,26 +76,38 @@ function toHtml(text) {
 
     flush();
 
-    // "3. THIRD-PARTY SERVICES" — numbered and shouted, which is how both documents
-    // mark a section. A line that merely starts with a digit is not one.
+    // "## Heading" and "### Heading" come from the long-form documents in
+    // `web/content`; "3. THIRD-PARTY SERVICES" is how the shorter in-app ones mark a
+    // section. A line that merely starts with a digit is not one.
+    if (line.startsWith('### ')) {
+      out.push(`<h3>${inline(line.slice(4))}</h3>`);
+      return;
+    }
+    if (line.startsWith('## ')) {
+      out.push(`<h2>${inline(line.slice(3))}</h2>`);
+      return;
+    }
     if (/^\d+\.\s+\S/.test(line) && line === line.toLocaleUpperCase('tr-TR')) {
-      out.push(`<h2>${escape(line)}</h2>`);
+      out.push(`<h2>${inline(line)}</h2>`);
       return;
     }
 
-    out.push(`<p>${escape(line)}</p>`);
+    out.push(`<p>${inline(line)}</p>`);
   });
 
   flush();
   return out.join('\n    ');
 }
 
+/** The long-form policy, which is authored here rather than shipped in the app. */
+const content = (name) => readFileSync(join(here, 'content', name), 'utf8').trim();
+
 const PAGES = [
   {
     file: 'privacy.html',
     slug: 'privacy',
-    en: { title: 'Privacy Policy', body: literal('PRIVACY_EN') },
-    tr: { title: 'Gizlilik Politikası', body: literal('PRIVACY_TR') },
+    en: { title: 'Privacy Policy', body: content('privacy-en.txt') },
+    tr: { title: 'Gizlilik Politikası', body: content('privacy-tr.txt') },
     description: 'How Pointer collects, uses and protects your information.',
   },
   {

@@ -1,0 +1,131 @@
+Last updated: 23 August 2026
+
+## Who we are
+
+Pointer ("the app", "we", "us") is a location- and outfit-based social discovery app operated from Turkey. This Privacy Policy explains what information the app collects, why, who it is shared with, how long it is kept, and how you can have it deleted.
+
+By creating an account and using Pointer, you agree to the collection and use of information as described here. If you do not agree, please do not use the app.
+
+## Definitions
+
+- **Account** — the unique account created for you to use Pointer.
+- **Personal Data** — any information relating to an identified or identifiable person. We use "Personal Data" and "personal information" interchangeably.
+- **Service Provider** — a third-party company that processes data on our behalf so the app can work. Ours are named in section 3.
+- **Post** — a "location share": a statement that you are at a place, wearing something, visible to other users for 24 hours.
+- **You** — the person using Pointer.
+
+## 1. Information we collect
+
+### Information you give us
+
+- Email address and password. If you sign in with Google or Apple, we receive your email address from them instead of a password.
+- Name, surname, gender and date of birth, which you enter when setting up your profile.
+- Profile and outfit photos you choose to upload. These commonly include images of your face.
+- The content of your posts: the place name, the description of what you are wearing, and any tags.
+- The content of messages you send to other users.
+- Anything you write to us through Help & Support.
+
+### Information we collect with your permission
+
+- **Location.** When you share a post, we use your device location to verify that the place you named matches where you are, and to let people nearby find your post. When you browse, we use it to find posts near you. Location is used at the moment you take these actions; the app does not track you in the background. You can turn this off at any time in your device settings, though most of the app will not work without it.
+- **Camera and photo library.** Only when you choose to add a photo. We access the image you pick, nothing else in your library.
+
+### Information collected automatically
+
+Our hosting provider records standard server logs when the app talks to it — IP address, timestamps, and which request was made — for security monitoring and troubleshooting. Pointer contains no advertising, no analytics SDK and no tracking across other apps or websites.
+
+## 2. How we use your information
+
+- To create and manage your account.
+- To show your profile, posts and photos to other users of the app.
+- To find posts near you, and to let others find yours.
+- To let you send and receive match requests, and to carry messages between matched users.
+- To analyse an outfit photo you upload, when you ask us to, so the app can suggest a description of it.
+- To answer you when you contact support.
+- To keep the service safe: to act on reports, to enforce our Terms, and to prevent abuse.
+- To comply with the law.
+
+We do not use your information for advertising, and we do not sell it.
+
+## 3. Who your information is shared with
+
+### Other users of the app
+
+This is the main way your information is shared, and it is the point of the app. When you publish a post, the following becomes visible to other users: your first name, your profile and outfit photos, your gender and age, the place name and outfit description you wrote, and roughly how far away you are. Messages you send are visible to the person you send them to. You can block any user, and you can delete your posts and photos at any time.
+
+### Service providers
+
+We use these companies to run the app. They process data on our behalf, under their own privacy policies:
+
+- **Supabase** — database, authentication, file storage and realtime messaging. All app data is stored here.
+- **Google Sign-In** — optional login. Used only if you choose it.
+- **Apple Sign-In** — optional login. Used only if you choose it.
+- **SendGrid** — sends the emails we have to send you, such as password reset codes and replies from support.
+- **Anthropic** — analyses an outfit photo when you ask the app to describe it. The photo is sent for that single request and is not used to train models.
+
+We share your Personal Data with no one else. We have no advertising partners, no data brokers and no affiliates.
+
+### When the law requires it
+
+We may disclose information if we are legally required to, or where we believe in good faith that it is necessary to comply with a legal obligation, to protect someone's safety, to investigate abuse of the service, or to defend our legal rights.
+
+### If the business changes hands
+
+If Pointer is ever merged with or sold to another company, your information may be transferred as part of that. We will tell you before that happens and before a different privacy policy applies to you.
+
+## 4. How long we keep your information
+
+We keep Personal Data only as long as we need it for the purposes above.
+
+- **Account information** — for as long as your account exists. When you delete your account it is removed immediately; see section 6.
+- **Posts** — a post stops being visible 24 hours after you publish it. Expired posts are kept so you can see your own history, and only your ten most recent expired posts are retained; older ones are deleted automatically.
+- **Messages** — for as long as the conversation exists. Ending a match deletes the conversation and its messages.
+- **Support correspondence** — up to 24 months after the matter is closed, so we can answer follow-up questions and defend against claims.
+- **Server logs** — up to 24 months, for security and troubleshooting.
+
+We may keep information longer where the law requires it, or where it is necessary to establish or defend a legal claim. Residual copies may remain in encrypted backups for a limited period and are not restored except for disaster recovery or legal compliance.
+
+## 5. Where your information is processed
+
+Your information is processed on servers that may be located outside Turkey and outside the country you live in, where data-protection law may differ from your own. Where the law requires it, we make sure such transfers are covered by appropriate safeguards.
+
+## 6. Deleting your account and your data
+
+You can delete your account yourself, and doing so deletes everything: your profile, every photo, every post, your matches, your conversations and your login credentials. There is no waiting period and no way to undo it.
+
+**Inside the app** — Profile → menu → Delete Account. You will be asked to confirm twice.
+
+**Without the app** — go to https://mealuc.github.io/pointer-site/delete-account.html and verify your email address. You do not need to have the app installed. This is the route to use if you have uninstalled Pointer, lost your device, or cannot sign in.
+
+**By email** — write to supportpointer@gmail.com from the address on the account and we will delete it for you, within 30 days.
+
+You can also delete individual photos and posts at any time from your profile, without deleting your account.
+
+We may need to keep a limited amount of information after deletion where the law obliges us to.
+
+## 7. Your rights
+
+Depending on where you live, you may have the right to ask us for a copy of the Personal Data we hold about you, to have it corrected, to have it deleted, to restrict or object to how we use it, and to complain to your national data protection authority. Most of this you can do yourself in the app: your profile is editable, and deletion is described above. For anything else, write to supportpointer@gmail.com.
+
+## 8. Security
+
+We use commercially reasonable measures to protect your information: connections are encrypted in transit, and access to data is restricted per user at the database level so one user cannot read another's private data. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+
+## 9. Age limit
+
+Pointer is for adults. You must be at least 18 years old to use it, and our Terms of Service say the same. We do not knowingly collect Personal Data from anyone under 18. If you are a parent or guardian and believe your child has given us their information, write to supportpointer@gmail.com and we will remove it.
+
+## 10. Links to other sites
+
+The app and this site may link elsewhere. We do not control those sites and are not responsible for their content or privacy practices. Read their policies before giving them anything.
+
+## 11. Changes to this policy
+
+We may update this policy. When we do, we will post the new version on this page and change the "Last updated" date above. Where the change is significant, we will tell you in the app or by email before it takes effect.
+
+## 12. Contact
+
+Questions about this policy, or about your information:
+
+- Email: supportpointer@gmail.com
+- In the app: Help & Support
