@@ -9,7 +9,19 @@ terms.html            generated  ← rn-app/src/content/legal.ts
 delete-account.html   working self-service account deletion
 assets/site.css       shared styles, dark only (the app has no light mode)
 assets/i18n.js        EN/TR switch, English lives in the markup
+assets/icon-*.png     favicons, cropped and scaled from rn-app/assets/pointer/app-icon.png
+content/privacy-*.txt the full privacy policy the stores link to, EN + TR
 build.mjs             regenerates privacy.html and terms.html
+```
+
+## Regenerating the favicons
+
+They come from the app icon, cropped in from the square's dead margin so the pin still
+reads at 16px:
+
+```bash
+sips --cropToHeightWidth 900 900 rn-app/assets/pointer/app-icon.png --out /tmp/crop.png
+for s in 16 32 48 180; do sips -z $s $s /tmp/crop.png --out web/assets/icon-$s.png; done
 ```
 
 ## After editing the legal text

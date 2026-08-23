@@ -126,6 +126,9 @@ const page = ({ slug, en, tr, description }) => `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${en.title} — Pointer</title>
 <meta name="description" content="${description}">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
