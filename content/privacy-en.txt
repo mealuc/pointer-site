@@ -95,9 +95,9 @@ You can delete your account yourself, and doing so deletes everything: your prof
 
 **Inside the app** — Profile → menu → Delete Account. You will be asked to confirm twice.
 
-**Without the app** — go to https://mealuc.github.io/pointer-site/delete-account.html and verify your email address. You do not need to have the app installed. This is the route to use if you have uninstalled Pointer, lost your device, or cannot sign in.
+**Without the app** — go to https://mealuc.github.io/pointer-site/delete-account.html and sign in with your email address and password. You do not need to have the app installed, so this is the route to use if you have uninstalled Pointer or lost your device.
 
-**By email** — write to supportpointer@gmail.com from the address on the account and we will delete it for you, within 30 days.
+**By email** — if you signed in with Google or Apple you have no password, so write to supportpointer@gmail.com from the address on the account instead. The same applies if you cannot sign in for any other reason. We delete the account within 30 days, and the deletion is identical to the one above.
 
 You can also delete individual photos and posts at any time from your profile, without deleting your account.
 

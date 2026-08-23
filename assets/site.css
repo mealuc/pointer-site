@@ -205,21 +205,11 @@ button.ghost:hover { color: var(--ink); border-color: var(--muted); }
 button:disabled { opacity: 0.5; cursor: default; }
 button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-.tabs { display: flex; gap: 0.5rem; margin-bottom: 1.25rem; }
-
-.tab {
-  flex: 1;
-  background: var(--field);
-  border: 1px solid transparent;
-  color: var(--muted);
-  border-radius: 10px;
-  padding: 0.55rem 0.5rem;
-  font: inherit;
+.social-note {
   font-size: 14px;
-  cursor: pointer;
+  color: var(--muted);
+  margin: 0.9rem 0 0;
 }
-
-.tab[aria-selected="true"] { background: var(--pink); color: #FFFFFF; font-weight: 600; }
 
 .msg {
   border-radius: 10px;

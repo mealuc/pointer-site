@@ -79,13 +79,15 @@ legal text has to stay next to the client that also ships it.
 existing `delete-account` Edge Function — the same one the in-app button calls. Nothing
 new runs on the server, so there is one deletion path, not two that can drift.
 
-Two ways in, because one is not enough:
+**Email + password only.** There was a second tab that emailed an 8-digit code
+(`signInWithOtp`), which would have covered Google and Apple accounts too — they have no
+password. It was removed because the project's mail sender does not work (see below), and
+a button that promises a code nobody receives is worse than no button. Those users are
+sent to the `mailto:` request instead, which the page states plainly rather than burying.
 
-- **Email + password.** Fails for anyone who signed up with Google or Apple; they have
-  no password.
-- **Emailed 8-digit code** (`signInWithOtp`, `verifyOtp` with `type: 'email'`). Covers
-  every account regardless of how it was created. **This depends on the project's email
-  sender** — see below.
+Bringing it back is one commit once SMTP is configured; the flow was `signInWithOtp` then
+`verifyOtp` with `type: 'email'`, and the session that returns is enough to authorise the
+deletion — no password reset needed.
 
 The page never holds a session afterwards (`persistSession: false`). It exists to end an
 account; leaving a signed-in session in the browser on a shared computer would be
@@ -98,7 +100,6 @@ and is inert without a session. Row-level security is what protects data, not se
 
 `POST /auth/v1/otp` currently answers `500 "Error sending magic link email"` for a real
 account. That is Supabase's wrapper around any SMTP failure, and the built-in sender it
-falls back to is documented as for testing only, with a very low hourly cap. Until a
-custom SMTP provider is configured, the code tab can fail and the manual `mailto:`
-fallback at the bottom of the page is the one that has to work. The page reports this
-honestly rather than telling the visitor to retry.
+falls back to is documented as for testing only, with a very low hourly cap. This is why
+the page has no code tab, and why the `mailto:` route has to actually be monitored: for
+anyone who signed up with Google or Apple, it is the only way in.

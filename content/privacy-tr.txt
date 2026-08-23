@@ -95,9 +95,9 @@ Hesabınızı kendiniz silebilirsiniz ve bu işlem her şeyi siler: profiliniz, 
 
 **Uygulama içinden** — Profil → menü → Hesabı Sil. İki kez onaylamanız istenir.
 
-**Uygulama olmadan** — https://mealuc.github.io/pointer-site/delete-account.html adresine gidip e-posta adresinizi doğrulayın. Uygulamanın kurulu olması gerekmez. Pointer'ı kaldırdıysanız, cihazınızı kaybettiyseniz veya giriş yapamıyorsanız kullanmanız gereken yol budur.
+**Uygulama olmadan** — https://mealuc.github.io/pointer-site/delete-account.html adresine gidip e-posta adresiniz ve parolanızla giriş yapın. Uygulamanın kurulu olması gerekmez; Pointer'ı kaldırdıysanız veya cihazınızı kaybettiyseniz kullanmanız gereken yol budur.
 
-**E-posta ile** — hesabın e-posta adresinden supportpointer@gmail.com adresine yazın, hesabınızı 30 gün içinde biz silelim.
+**E-posta ile** — Google veya Apple ile giriş yaptıysanız parolanız yoktur; bu durumda hesabın e-posta adresinden supportpointer@gmail.com adresine yazın. Başka bir sebeple giriş yapamıyorsanız da aynısı geçerlidir. Hesabı 30 gün içinde sileriz ve silme yukarıdakiyle birebir aynıdır.
 
 Hesabınızı silmeden, tek tek fotoğraf ve gönderilerinizi de istediğiniz zaman profilinizden silebilirsiniz.
 
