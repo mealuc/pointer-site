@@ -41,9 +41,14 @@ cd web
 git init -b main
 git add .
 git commit -m "Pointer public site: privacy, terms, account deletion"
-git remote add origin git@github.com:<user>/pointer-site.git
+git remote add origin https://github.com/<user>/pointer-site.git
 git push -u origin main
 ```
+
+**HTTPS, not SSH.** The app repo pushes over HTTPS with the macOS keychain holding the
+token, and no SSH key is set up on this machine — an `git@github.com:` remote fails with
+`Permission denied (publickey)`. With the HTTPS remote the keychain answers for it and
+there is nothing to log in to.
 
 Then Settings → Pages → Source: `main`, folder `/ (root)`.
 The URLs become:
