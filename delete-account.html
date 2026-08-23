@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your Pointer account</title>
+<meta name="description" content="Delete your Pointer account and all of its data. You do not need to have the app installed.">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="top">
+    <a class="wordmark" href="./">Point<span>er</span></a>
+    <nav>
+      <a href="privacy.html" data-t="nav-privacy">Privacy Policy</a>
+      <a href="terms.html" data-t="nav-terms">Terms of Service</a>
+      <a href="delete-account.html" aria-current="page" data-t="nav-delete">Delete account</a>
+      <button class="lang" id="lang" type="button">Türkçe</button>
+    </nav>
+  </div>
+
+  <h1 data-t="title">Delete your account</h1>
+  <p class="lead" data-t="lead">
+    This deletes your Pointer account and everything in it, permanently. You do not need
+    to have the app installed — verify who you are below and the deletion happens
+    immediately.
+  </p>
+
+  <div class="warn">
+    <p data-t="w1"><b>What gets deleted, right away and for good:</b></p>
+    <ul>
+      <li data-t="w2">Your profile — name, date of birth, gender</li>
+      <li data-t="w3">Every profile and outfit photo you uploaded</li>
+      <li data-t="w4">Your location posts and their tags</li>
+      <li data-t="w5">Your matches, match requests and conversations</li>
+      <li data-t="w6">Your login credentials</li>
+    </ul>
+    <p data-t="w7">There is no undo, and no grace period. The same account cannot be restored later.</p>
+  </div>
+
+  <div class="panel">
+
+    <!-- step 1 — prove who you are -->
+    <div class="step on" id="step-auth">
+      <div class="tabs" role="tablist">
+        <button class="tab" id="tab-password" role="tab" aria-selected="true" type="button" data-t="t-pw">Email &amp; password</button>
+        <button class="tab" id="tab-code" role="tab" aria-selected="false" type="button" data-t="t-code">Email me a code</button>
+      </div>
+
+      <div class="msg bad" id="auth-error" role="alert"></div>
+      <div class="msg good" id="auth-note"></div>
+
+      <!-- password -->
+      <div id="pane-password">
+        <label for="pw-email" data-t="l-email">Email address</label>
+        <input type="email" id="pw-email" autocomplete="email" placeholder="you@example.com">
+
+        <label for="pw-pass" data-t="l-pass">Password</label>
+        <input type="password" id="pw-pass" autocomplete="current-password">
+
+        <button class="primary" id="do-password" type="button" data-t="b-continue">Continue</button>
+      </div>
+
+      <!-- code -->
+      <div id="pane-code" hidden>
+        <p style="font-size:15px;color:#8E8A93;margin-top:-0.25rem" data-t="code-hint">
+          Use this if you signed up with Google or Apple, or if you do not remember your
+          password. We email you an 8-digit code.
+        </p>
+
+        <label for="code-email" data-t="l-email">Email address</label>
+        <input type="email" id="code-email" autocomplete="email" placeholder="you@example.com">
+
+        <button class="primary" id="do-send" type="button" data-t="b-send">Send code</button>
+
+        <div id="code-entry" hidden style="margin-top:1.25rem">
+          <label for="code-otp" data-t="l-otp">8-digit code</label>
+          <input type="text" id="code-otp" inputmode="numeric" autocomplete="one-time-code" maxlength="8" style="letter-spacing:0.35em">
+          <button class="primary" id="do-verify" type="button" data-t="b-continue">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- step 2 — confirm -->
+    <div class="step" id="step-confirm">
+      <div class="msg bad" id="confirm-error" role="alert"></div>
+
+      <p class="who" data-t="signed">Signed in as <b id="who-email"></b></p>
+      <p data-t="c-ask">Deleting removes everything listed above. This cannot be undone.</p>
+
+      <button class="danger" id="do-delete" type="button" data-t="b-delete">Delete my account permanently</button>
+      <button class="ghost" id="do-cancel" type="button" data-t="b-cancel">Cancel</button>
+    </div>
+
+    <!-- step 3 — done -->
+    <div class="step" id="step-done">
+      <div class="msg good on" data-t="done-msg">
+        Your account and all of its data have been deleted. Thank you for having used Pointer.
+      </div>
+      <p style="font-size:15px;color:#8E8A93" data-t="done-note">
+        If you still have the app installed, you can remove it now. Signing in again will
+        create a brand-new, empty account.
+      </p>
+    </div>
+
+  </div>
+
+  <h2 data-t="alt-h">Prefer to write to us?</h2>
+  <p data-t="alt-p">
+    If you cannot get in above, email
+    <a href="mailto:melihemrealuc@gmail.com?subject=Pointer%20account%20deletion">melihemrealuc@gmail.com</a>
+    from the address on the account and we will delete it for you. Requests are handled
+    within 30 days.
+  </p>
+
+  <footer>
+    <span>Pointer</span>
+    <a href="privacy.html" data-t="nav-privacy">Privacy Policy</a>
+    <a href="terms.html" data-t="nav-terms">Terms of Service</a>
+  </footer>
+
+</div>
+
+<script src="assets/i18n.js"></script>
+<script>
+  applyLang({
+    en: {},
+    tr: {
+      "nav-privacy": "Gizlilik Politikası",
+      "nav-terms": "Kullanım Koşulları",
+      "nav-delete": "Hesap silme",
+      "title": "Hesabını sil",
+      "lead": "Bu işlem Pointer hesabını ve içindeki her şeyi kalıcı olarak siler. Uygulamanın kurulu olmasına gerek yok — aşağıdan kimliğini doğrula, silme işlemi hemen gerçekleşir.",
+      "w1": "<b>Anında ve kalıcı olarak silinenler:</b>",
+      "w2": "Profilin — ad, doğum tarihi, cinsiyet",
+      "w3": "Yüklediğin bütün profil ve kıyafet fotoğrafları",
+      "w4": "Konum gönderilerin ve etiketleri",
+      "w5": "Eşleşmelerin, eşleşme isteklerin ve sohbetlerin",
+      "w6": "Giriş bilgilerin",
+      "w7": "Geri alınamaz, bekleme süresi yoktur. Aynı hesap sonradan geri getirilemez.",
+      "t-pw": "E-posta ve şifre",
+      "t-code": "E-postama kod gönder",
+      "l-email": "E-posta adresi",
+      "l-pass": "Şifre",
+      "l-otp": "8 haneli kod",
+      "b-continue": "Devam et",
+      "b-send": "Kod gönder",
+      "b-delete": "Hesabımı kalıcı olarak sil",
+      "b-cancel": "Vazgeç",
+      "code-hint": "Google veya Apple ile kaydolduysan ya da şifreni hatırlamıyorsan bunu kullan. E-postana 8 haneli bir kod gönderiyoruz.",
+      "signed": "Giriş yapıldı: <b id=\"who-email\"></b>",
+      "c-ask": "Silme işlemi yukarıda sayılan her şeyi kaldırır. Bu geri alınamaz.",
+      "done-msg": "Hesabın ve tüm verilerin silindi. Pointer'ı kullandığın için teşekkürler.",
+      "done-note": "Uygulama hâlâ kuruluysa şimdi kaldırabilirsin. Yeniden giriş yapmak yepyeni ve boş bir hesap oluşturur.",
+      "alt-h": "Bize yazmayı mı tercih edersin?",
+      "alt-p": "Yukarıdan giremiyorsan, hesabın e-posta adresinden <a href=\"mailto:melihemrealuc@gmail.com?subject=Pointer%20hesap%20silme\">melihemrealuc@gmail.com</a> adresine yaz, hesabını biz silelim. Talepler 30 gün içinde karşılanır."
+    }
+  });
+</script>
+
+<script type="module">
+  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+  /* The anon key is public by design — it is compiled into both mobile clients and is
+     useless without a session. Row-level security, not secrecy, is what protects data. */
+  const SUPABASE_URL = 'https://wcqvpphekhhmqtxafnka.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjcXZwcGhla2hobXF0eGFmbmthIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg1ODkwODksImV4cCI6MjA5NDE2NTA4OX0.SjOb3Yykhy-7PxPTPf1XBG5rtYEI4OM5WN5rfVzRuSA';
+
+  /* `persistSession: false`: this page exists to end an account, so leaving a session
+     behind in the browser afterwards would be both pointless and careless — on a shared
+     computer it is a signed-in session nobody asked for. */
+  const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+
+  const OTP_LENGTH = 8;
+
+  const $ = (id) => document.getElementById(id);
+
+  const T = {
+    en: {
+      needEmail: 'Enter your email address.',
+      needPassword: 'Enter your password.',
+      badLogin: 'Incorrect email or password.',
+      needCode: 'Enter the ' + OTP_LENGTH + '-digit code from the email.',
+      badCode: 'That code is not valid or has expired. Send a new one.',
+      noAccount: 'There is no Pointer account with that email address.',
+      mailFailed: 'We could not send the code right now. Use the email option at the bottom of this page instead.',
+      sent: 'Code sent. Check your inbox, and your spam folder.',
+      network: 'Could not reach Pointer. Check your connection and try again.',
+      failed: 'The account could not be deleted. Try again, or email us.',
+      working: 'Working…',
+      sending: 'Sending…',
+      deleting: 'Deleting…',
+    },
+    tr: {
+      needEmail: 'E-posta adresini gir.',
+      needPassword: 'Şifreni gir.',
+      badLogin: 'E-posta veya şifre hatalı.',
+      needCode: 'E-postadaki ' + OTP_LENGTH + ' haneli kodu gir.',
+      badCode: 'Bu kod geçersiz veya süresi dolmuş. Yeni bir kod iste.',
+      noAccount: 'Bu e-posta adresine ait bir Pointer hesabı yok.',
+      mailFailed: 'Şu anda kod gönderemedik. Bunun yerine sayfanın altındaki e-posta seçeneğini kullan.',
+      sent: 'Kod gönderildi. Gelen kutunu ve spam klasörünü kontrol et.',
+      network: "Pointer'a ulaşılamadı. Bağlantını kontrol edip tekrar dene.",
+      failed: 'Hesap silinemedi. Tekrar dene ya da bize e-posta gönder.',
+      working: 'İşleniyor…',
+      sending: 'Gönderiliyor…',
+      deleting: 'Siliniyor…',
+    },
+  };
+
+  const say = (key) => (T[window.pointerLang] || T.en)[key];
+
+  function show(el, text) {
+    el.textContent = text;
+    el.classList.add('on');
+  }
+
+  function clearMessages() {
+    ['auth-error', 'auth-note', 'confirm-error'].forEach((id) => {
+      const el = $(id);
+      el.textContent = '';
+      el.classList.remove('on');
+    });
+  }
+
+  function step(name) {
+    ['step-auth', 'step-confirm', 'step-done'].forEach((id) => {
+      $(id).classList.toggle('on', id === 'step-' + name);
+    });
+  }
+
+  /* Supabase reports failures as prose, so this maps the few we can act on and lets
+     everything else fall through to a generic line rather than showing raw English. */
+  function reason(error, fallback) {
+    const text = [error?.message, error?.code, error?.error_code, error]
+      .filter(Boolean).join(' ').toLowerCase();
+    if (text.includes('invalid login') || text.includes('invalid credentials')) return say('badLogin');
+    if (text.includes('token has expired') || text.includes('invalid token') || text.includes('otp')) return say('badCode');
+    if (text.includes('otp_disabled') || text.includes('signups not allowed') || text.includes('user not found')) return say('noAccount');
+    // Supabase wraps every SMTP failure as this one 500. It is the project's mail
+    // sender giving up, not the visitor doing anything wrong, so point them at the
+    // fallback instead of asking them to retry something that will fail again.
+    if (text.includes('error sending') || text.includes('unexpected_failure')) return say('mailFailed');
+    if (text.includes('failed to fetch') || text.includes('network')) return say('network');
+    return fallback;
+  }
+
+  async function busy(button, key, run) {
+    const label = button.textContent;
+    button.disabled = true;
+    button.textContent = say(key);
+    try {
+      await run();
+    } finally {
+      button.disabled = false;
+      button.textContent = label;
+    }
+  }
+
+  /* ---- tabs ---- */
+
+  function selectTab(which) {
+    const password = which === 'password';
+    $('tab-password').setAttribute('aria-selected', String(password));
+    $('tab-code').setAttribute('aria-selected', String(!password));
+    $('pane-password').hidden = !password;
+    $('pane-code').hidden = password;
+    clearMessages();
+  }
+
+  $('tab-password').addEventListener('click', () => selectTab('password'));
+  $('tab-code').addEventListener('click', () => selectTab('code'));
+
+  /* ---- step 1a: password ---- */
+
+  $('do-password').addEventListener('click', () => busy($('do-password'), 'working', async () => {
+    clearMessages();
+    const email = $('pw-email').value.trim();
+    const password = $('pw-pass').value;
+
+    if (!email) return show($('auth-error'), say('needEmail'));
+    if (!password) return show($('auth-error'), say('needPassword'));
+
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) return show($('auth-error'), reason(error, say('badLogin')));
+
+    toConfirm(data.user?.email || email);
+  }));
+
+  /* ---- step 1b: emailed code ----
+     `shouldCreateUser: false` matters here: the default would silently create an
+     account for a mistyped address, on the one page whose entire job is deletion. */
+
+  $('do-send').addEventListener('click', () => busy($('do-send'), 'sending', async () => {
+    clearMessages();
+    const email = $('code-email').value.trim();
+    if (!email) return show($('auth-error'), say('needEmail'));
+
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: { shouldCreateUser: false },
+    });
+    if (error) return show($('auth-error'), reason(error, say('network')));
+
+    $('code-entry').hidden = false;
+    $('code-otp').focus();
+    show($('auth-note'), say('sent'));
+  }));
+
+  $('do-verify').addEventListener('click', () => busy($('do-verify'), 'working', async () => {
+    clearMessages();
+    const email = $('code-email').value.trim();
+    const token = $('code-otp').value.trim();
+
+    if (token.length !== OTP_LENGTH) return show($('auth-error'), say('needCode'));
+
+    const { data, error } = await supabase.auth.verifyOtp({ email, token, type: 'email' });
+    if (error) return show($('auth-error'), reason(error, say('badCode')));
+
+    toConfirm(data.user?.email || email);
+  }));
+
+  /* ---- step 2: confirm ---- */
+
+  /* Kept in a variable, not read back off the DOM: switching language re-renders the
+     line through `data-t`, which replaces the <b> the address was written into. */
+  let signedInEmail = '';
+
+  function paintEmail() {
+    const target = $('who-email');
+    if (target) target.textContent = signedInEmail;
+  }
+
+  function toConfirm(email) {
+    signedInEmail = email;
+    paintEmail();
+    step('confirm');
+  }
+
+  $('do-cancel').addEventListener('click', async () => {
+    await supabase.auth.signOut().catch(() => {});
+    clearMessages();
+    step('auth');
+  });
+
+  $('do-delete').addEventListener('click', () => busy($('do-delete'), 'deleting', async () => {
+    clearMessages();
+
+    const { data, error } = await supabase.functions.invoke('delete-account');
+    if (error || !data?.success) {
+      return show($('confirm-error'), reason(error, say('failed')));
+    }
+
+    await supabase.auth.signOut().catch(() => {});
+    step('done');
+  }));
+
+  document.addEventListener('langchange', paintEmail);
+</script>
+</body>
+</html>
