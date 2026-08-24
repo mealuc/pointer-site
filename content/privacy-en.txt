@@ -60,7 +60,7 @@ We use these companies to run the app. They process data on our behalf, under th
 - **Supabase** — database, authentication, file storage and realtime messaging. All app data is stored here.
 - **Google Sign-In** — optional login. Used only if you choose it.
 - **Apple Sign-In** — optional login. Used only if you choose it.
-- **SendGrid** — sends the emails we have to send you, such as password reset codes and replies from support.
+- **Brevo** — sends the emails we have to send you, such as password reset codes and replies from support.
 - **Anthropic** — analyses an outfit photo when you ask the app to describe it. The photo is sent for that single request and is not used to train models.
 
 We share your Personal Data with no one else. We have no advertising partners, no data brokers and no affiliates.

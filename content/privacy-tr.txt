@@ -60,7 +60,7 @@ Uygulamayı çalıştırmak için şu şirketleri kullanıyoruz. Bizim adımıza
 - **Supabase** — veritabanı, kimlik doğrulama, dosya depolama ve anlık mesajlaşma. Tüm uygulama verisi burada saklanır.
 - **Google Sign-In** — isteğe bağlı giriş. Yalnızca siz seçerseniz kullanılır.
 - **Apple Sign-In** — isteğe bağlı giriş. Yalnızca siz seçerseniz kullanılır.
-- **SendGrid** — size göndermek zorunda olduğumuz e-postaları gönderir; parola sıfırlama kodları ve destek yanıtları gibi.
+- **Brevo** — size göndermek zorunda olduğumuz e-postaları gönderir; parola sıfırlama kodları ve destek yanıtları gibi.
 - **Anthropic** — siz istediğinizde kıyafet fotoğrafını çözümler. Fotoğraf yalnızca o istek için gönderilir ve model eğitiminde kullanılmaz.
 
 Kişisel Verilerinizi başka hiç kimseyle paylaşmıyoruz. Reklam ortağımız, veri simsarıyla ilişkimiz ve bağlı şirketimiz yoktur.
