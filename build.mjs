@@ -155,6 +155,8 @@ const page = ({ slug, en, tr, description }) => `<!DOCTYPE html>
     <a href="privacy.html" data-t="nav-privacy">Privacy Policy</a>
     <a href="terms.html" data-t="nav-terms">Terms of Service</a>
     <a href="delete-account.html" data-t="nav-delete">Delete account</a>
+    <a href="data-deletion.html" data-t="nav-data">Deleting your data</a>
+    <a href="child-safety.html" data-t="nav-child">Child Safety Standards</a>
   </footer>
 
 </div>
@@ -166,6 +168,8 @@ const page = ({ slug, en, tr, description }) => `<!DOCTYPE html>
       "nav-privacy": "Gizlilik Politikası",
       "nav-terms": "Kullanım Koşulları",
       "nav-delete": "Hesap silme",
+      "nav-data": "Verilerinizi silme",
+      "nav-child": "Çocuk Güvenliği Standartları",
       "h1": ${JSON.stringify(tr.title)},
       "doc": ${JSON.stringify('\n    ' + toHtml(tr.body) + '\n  ')}
     }
